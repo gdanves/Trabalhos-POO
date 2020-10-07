@@ -26,9 +26,9 @@ namespace Fakemon
 
         private void End(bool won)
         {
-            uint choice;
             string result = won ? "Você ganhou! Deseja jogar novamente?" : "Você perdeu. Deseja tentar novamente?";
             Console.WriteLine("{0}\n1. Sim\n2. Não", result);
+            uint choice;
             if(!uint.TryParse(Console.ReadLine(), out choice) || choice != 1)
                 Program.Terminate();
             else

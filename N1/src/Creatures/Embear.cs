@@ -41,7 +41,8 @@ namespace Fakemon
                Console.ForegroundColor = ConsoleColor.Cyan;
                ProcessMove(this, damage);
             }
-            else {
+            else
+            {
                 Console.ForegroundColor = ConsoleColor.Red;
                 ProcessMove(target, damage);
             }
