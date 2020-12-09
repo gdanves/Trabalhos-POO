@@ -18,7 +18,7 @@ namespace MathMagic
 
         public static void ParseUint(ref uint value, uint min, uint max, string errorMessage)
         {
-            while(!uint.TryParse(Console.ReadLine(), out value) || value < min || value > max)
+            while(!uint.TryParse(Console.ReadLine(), out value) || value < min || (max > 0 && value > max))
                 Console.WriteLine(errorMessage);
         }
     }
